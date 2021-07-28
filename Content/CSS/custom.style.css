@@ -1,0 +1,17 @@
+.custom-width {
+	width: 80%;
+}
+.error-border {
+	border: 1px solid red;
+}
+.spacing-top-bottom {
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+.div-spacing {
+	padding-left: 70px;
+	padding-right: 50px;
+}
+.custom-width2 {
+	width: 80%;
+}
