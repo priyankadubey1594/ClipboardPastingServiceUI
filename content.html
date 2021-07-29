@@ -27,10 +27,11 @@
 
 		var vars=getUrlVars();
 		var postId = vars['postId'];
+		var apiEndpoint = "http://localhost:8001/";
 
 		$.ajax({
 			type: "GET",
-			url: "http://localhost:8001/GetContent.php?postId="+postId,
+			url: apiEndpoint+"GetContent.php?postId="+postId,
 			// headers: {
 			// "Accept":"application/json",
 			// "X-AccessKey": "qaqaegtr124jnjiddlo0was22",
@@ -65,7 +66,7 @@
 				$.ajax({
 				    type: "POST",
 				    //dataType: "json",
-				    url: "http://localhost:8001/AuthenticateAccess.php",
+				    url: apiEndpoint+"AuthenticateAccess.php",
 				    data: {postId:postId, password:password},
 				    // headers: {
 				  	// "Content-Type":"application/json",

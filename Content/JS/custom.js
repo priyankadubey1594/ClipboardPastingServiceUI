@@ -17,7 +17,7 @@ $(document).ready(function(){
 			//     error: function(jqXHR, textStatus, errorThrown) {alert("failure");}
 			// });
 			
-
+			var apiEndpoint = "http://localhost:8001/";
 			var err=0;
 			var content= $("#content"), expiration=$("#expiration"), exposure=$("#exposure"), name=$("#name"), password= $("#password");
 			if(content.val()=="") {
@@ -47,7 +47,7 @@ $(document).ready(function(){
 				data={content:content.val(),expiration:expiration.val(),exposure:exposure.val(),name:name.val(),password:password.val()};
 				$.ajax({
 				  type: "POST",
-				  url: "http://localhost:8001/PostContent.php",
+				  url: apiEndpoint+"PostContent.php",
 				  //dataType: 'json',
 				  data:data,
 				  // headers: {
